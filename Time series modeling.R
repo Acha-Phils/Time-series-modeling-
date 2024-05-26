@@ -27,7 +27,7 @@ str(ftmc_4000)
 ftmc_return<-ftmc_4000[,4]
 str(ftmc_return)
 
-########### Question 1 #########################################################
+###########  1 #########################################################
 
 # plotting the time series of the data over time
 par(mfrow=c(1,3))
@@ -59,7 +59,7 @@ par(mfrow=c(1,1))
 # Testing for stationarity using the (ADF) test
 adf.test(df_log_return)
 
-#################### Question 2 #################################################
+####################  2 #################################################
 # Selecting a suitable ARMA process with auto.arima function
 auto.arima(df_log_return, max.p=5, max.q=5, max.P=5, ic='bic')
 
@@ -188,7 +188,7 @@ plot(sigma(return.garch.t),main="ARMA(2,0)-GARCH(1,1) Conditional Volatility")
 #note the increase in volatility in the series
 
 ########################################################################################
-#           Question 3 To capture asymmetric volatility
+#           To capture asymmetric volatility
 #######################################################################################
 # Fit ARMA(2,0)-iGARCH(1,1) Model 
 igarch_spec <- ugarchspec(variance.model=list(model = "iGARCH", garchOrder=c(1,1)), 
