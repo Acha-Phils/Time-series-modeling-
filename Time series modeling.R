@@ -20,7 +20,7 @@ str(ftmc)
 # randomly select 4000 samples
 set.seed(123)
 n<-nrow(ftmc)
-ftmc_4000<- ftmc[sample(1:n, 4000, replace = FALSE), ]
+ftmc_4000<- ftmc[1:4000, ]
 str(ftmc_4000)
 
 # Extract the returns from the close column
