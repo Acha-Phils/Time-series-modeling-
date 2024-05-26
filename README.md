@@ -1,1 +1,1 @@
-Selecting the model model for the time series data.
+Selecting the best model for the time series data.
